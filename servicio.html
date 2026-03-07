@@ -1,20 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="img/logo_V_blanco.png" type="image/x-icon">
 </head>
+
 <body>
-    
-    <div class="container-fluid">
-        
-    </div>
-    
+    <header class="bg-black py-4">
+        <nav class="container-fluid px-3 px-md-5" aria-label="Navegacion principal">
+            <div class="row align-items-center text-center g-3">
+                <div class="col-6 col-md-2 order-2 order-md-1">
+                    <a href="#inicio" class="text-white text-decoration-none fs-4 fw-light">Inicio</a>
+                </div>
+                <div class="col-6 col-md-2 order-3 order-md-2">
+                    <a href="#servicios" class="text-white text-decoration-none fs-4 fw-light">Servicios</a>
+                </div>
+                <div class="col-12 col-md-4 order-1 order-md-3 d-flex justify-content-center">
+                    <a href="index.html" aria-label="Volver al inicio">
+                        <img src="img/logo_V_blanco.png" alt="Logo V blanco" class="img-fluid"
+                            style="max-width: 100px;">
+                    </a>
+                </div>
+                <div class="col-6 col-md-2 order-4">
+                    <a href="#sobre-nosotros" class="text-white text-decoration-none fs-4 fw-light">Sobre nosotros</a>
+                </div>
+                <div class="col-6 col-md-2 order-5">
+                    <a href="#galeria" class="text-white text-decoration-none fs-4 fw-light">Galeria</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <main class="container-fluid bg-black py-5 mb-5">
+        <div class="container">
+            <section class="row align-items-center g-4 mb-4">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <h1 class="text-center text-white fw-bolder m-0">Servicios</h1>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <img src="img_prueba/Captura de pantalla 2026-03-06 a las 15.01.40.png" alt="Corte de pelo"
+                        class="img-fluid rounded" >
+                </div>
+            </section>
 
+            <div class="d-flex justify-content-center mt-5">
+                <a href="https://booksy.com/es-es/148134_next-level-barbers_barberia_29219_pueblo-benalmadena#ba_s=seo"
+                    target="_blank"
+                    id="btn-reservar"
+                    class="btn col-4 rounded py-2"
+                    style="background-color: #d8c5a3; color: #1f1f1f; border: 1px solid #d8c5a3;">Reservar</a>
+            </div>
+        </div>
+    </main>
+
+    <section id="servicios" class="bg-white my-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold mb-2">Todos los servicios</h2>
+                <p class="text-secondary mb-0">Elige el servicio que mejor se adapta a ti</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 bg-black text-white border-0 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge mb-3"
+                                style="background-color: #d8c5a3; color: #1f1f1f;">Popular</span>
+                            <h3 class="h5 card-title d-flex justify-content-between align-items-center gap-2 mb-3">
+                                <span>Corte caballero</span>
+                                <i class="bi bi-scissors" style="color: #cfcfcf;"></i>
+                            </h3>
+                            <p class="mb-0" style="color: #cfcfcf;">Corte personalizado con acabado limpio y estilo adaptado a tu rostro.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 bg-black text-white border-0 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge mb-3"
+                                style="background-color: #d8c5a3; color: #1f1f1f;">Popular</span>
+                            <h3 class="h5 card-title d-flex justify-content-between align-items-center gap-2 mb-3">
+                                <span>Corte y barba</span>
+                                <i class="bi bi-person-bounding-box" style="color: #cfcfcf;"></i>
+                            </h3>
+                            <p class="mb-0" style="color: #cfcfcf;">Servicio completo de corte y arreglo de barba para un look equilibrado.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 bg-black text-white border-0 shadow-sm">
+                        <div class="card-body">
+                            <span class="badge mb-3"
+                                style="background-color: #d8c5a3; color: #1f1f1f;">Popular</span>
+                            <h3 class="h5 card-title d-flex justify-content-between align-items-center gap-2 mb-3">
+                                <span>Corte de nino</span>
+                                <i class="bi bi-emoji-smile" style="color: #cfcfcf;"></i>
+                            </h3>
+                            <p class="mb-0" style="color: #cfcfcf;">Corte comodo y rapido para los peques con un resultado moderno y cuidado.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 bg-black text-white border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h5 card-title d-flex justify-content-between align-items-center gap-2 mb-3">
+                                <span>Corte + cejas</span>
+                                <i class="bi bi-eye" style="color: #cfcfcf;"></i>
+                            </h3>
+                            <p class="mb-0" style="color: #cfcfcf;">Incluye corte de cabello y perfilado de cejas para un acabado mas definido.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 bg-black text-white border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h5 card-title d-flex justify-content-between align-items-center gap-2 mb-3">
+                                <span>Servicio de barba y afeitado</span>
+                                <i class="bi bi-droplet-half" style="color: #cfcfcf;"></i>
+                            </h3>
+                            <p class="mb-0" style="color: #cfcfcf;">Arreglo de barba y afeitado preciso con tecnicas clasicas y detalle profesional.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 bg-black text-white border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h5 card-title d-flex justify-content-between align-items-center gap-2 mb-3">
+                                <span>Limpieza facial</span>
+                                <i class="bi bi-stars" style="color: #cfcfcf;"></i>
+                            </h3>
+                            <p class="mb-0" style="color: #cfcfcf;">Tratamiento para limpiar impurezas y revitalizar la piel del rostro.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 bg-black text-white border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h5 card-title d-flex justify-content-between align-items-center gap-2 mb-3">
+                                <span>Servicio decoloracion o mechas</span>
+                                <i class="bi bi-palette" style="color: #cfcfcf;"></i>
+                            </h3>
+                            <p class="mb-0" style="color: #cfcfcf;">Cambio de color parcial o total para aportar luz y personalidad al estilo.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 bg-black text-white border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h5 card-title d-flex justify-content-between align-items-center gap-2 mb-3">
+                                <span>Experiencia Next Level</span>
+                                <i class="bi bi-gem" style="color: #cfcfcf;"></i>
+                            </h3>
+                            <p class="mb-0" style="color: #cfcfcf;">Pack premium con asesoramiento y servicio completo para un resultado top.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black mt-5">
+        <div class="container d-flex justify-content-center">
+            <img src="img/logo_blanco.png" alt="Logo blanco Next Level" class="img-fluid" style="max-width: 500px;">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+    <script>
+        const btnReservar = document.getElementById("btn-reservar");
+
+        if (btnReservar) {
+            btnReservar.addEventListener("click", function (event) {
+
+                this.animate(
+                    [
+                        { transform: "scale(1)", filter: "brightness(1)" },
+                        { transform: "scale(0.94)", filter: "brightness(0.9)" },
+                        { transform: "scale(1)", filter: "brightness(1)" }
+                    ],
+                    { duration: 220, easing: "ease-out" }
+                );
+
+            });
+        }
+    </script>
+
+    <!--
+  ██████╗  ██████╗ ██╗  ██╗ █████╗
+  ██╔══██╗██╔═══██╗██║ ██╔╝██╔══██╗
+  ██████╔╝██║   ██║█████╔╝ ███████║
+  ██╔══██╗██║   ██║██╔═██╗ ██╔══██║
+  ██║  ██║╚██████╔╝██║  ██╗██║  ██║
+  ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+
+  Crafted with care by ELROKA02
+-->
 </body>
+
 </html>
