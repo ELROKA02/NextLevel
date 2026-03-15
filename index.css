@@ -4,3 +4,13 @@
     --color-blanco: #ffffff;
     --color-emerald: #08321e;
 }
+
+.productos-slate-bg {
+    background-color: #33373b;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.18)),
+        url("img_prueba/dark-gray-abstract-concrete-wall.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
