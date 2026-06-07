@@ -1,0 +1,47 @@
+/* Beige sólido — CTA primario sobre fondos oscuros */
+.btn-back-beige {
+  background-color: #d8c5a3;
+  color: #1f1f1f;
+  border: 1px solid #d8c5a3;
+}
+.btn-back-beige:hover {
+  background-color: #c9b28a;
+  color: #1f1f1f;
+  border-color: #c9b28a;
+}
+
+/* White outline — secundario sobre fondo negro */
+.btn-border-white {
+  background-color: transparent;
+  color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+}
+.btn-border-white:hover {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+/* Dark ghost — sutil sobre fondo pizarra */
+.btn-back-dark {
+  background-color: rgba(0, 0, 0, 0.271);
+  color: #212529;
+  border: 1px solid #212529;
+}
+.btn-back-dark:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-color: #fff;
+}
+
+/* === Size modifiers — composables con cualquier btn-* === */
+.btn-lg {
+  padding: 0.625rem 2.5rem;
+  font-size: 1.05rem;
+}
+.btn-xl {
+  padding: 0.75rem 3.5rem;
+  font-size: 1.125rem;
+}
+.btn-full {
+  width: 100%;
+}
