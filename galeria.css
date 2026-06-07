@@ -1,5 +1,8 @@
 body {
-  background: #ffffffd8;
+  background-image: url(img_prueba/dark-gray-abstract-concrete-wall.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .gallery-wall {
