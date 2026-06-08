@@ -59,6 +59,40 @@
         .visitanos {
             background-color: var(--color-gris);
         }
+
+        .estrellas {
+            display: inline-block;
+            color: white;
+            transition: color 0.2s;
+        }
+        .cardEfectoShadowDorado:hover .estrellas {
+            animation: aparecerEstrella 0.4s ease forwards;
+        }
+        .cardEfectoShadowDorado:hover .estrellas:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .cardEfectoShadowDorado:hover .estrellas:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+        .cardEfectoShadowDorado:hover .estrellas:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+        .cardEfectoShadowDorado:hover .estrellas:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+        .cardEfectoShadowDorado:hover .estrellas:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+        @keyframes aparecerEstrella {
+            from {
+                color: white;
+                transform: translateX(-10px) rotate(-180deg);
+            }
+            to {
+                color: rgb(255, 215, 0);
+                transform: translateX(0) rotate(0deg);
+            }
+        }
     </style>
 </head>
 <body>
@@ -186,9 +220,9 @@
                 <h2 class="text-center mb-5">Reseñas</h2>
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="card bg-dark h-100 text-white">
+                        <div class="card cardEfectoShadowDorado bg-dark h-100 text-white">
                             <div class="card-body text-center">
-                                <div class="mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                <div class="mb-3"><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span></div>
                                 <p class="card-text fw-bold">"Excelente servicio, muy profesional y el resultado es siempre perfecto."</p>
                                 <div class="d-flex justify-content-center align-items-center gap-2">
                                     <span>&#128100;</span>
@@ -198,9 +232,9 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card bg-dark h-100 text-white">
+                        <div class="card cardEfectoShadowDorado bg-dark h-100 text-white">
                             <div class="card-body text-center">
-                                <div class="mb-3">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                                <div class="mb-3"><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9734;</span></div>
                                 <p class="card-text fw-bold">"Me encanta el ambiente y el trato cercano. Volveré seguro."</p>
                                 <div class="d-flex justify-content-center align-items-center gap-2">
                                     <span>&#128100;</span>
@@ -210,9 +244,9 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card bg-dark h-100 text-white">
+                        <div class="card cardEfectoShadowDorado bg-dark h-100 text-white">
                             <div class="card-body text-center">
-                                <div class="mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                <div class="mb-3"><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span></div>
                                 <p class="card-text fw-bold">"El mejor barber de la zona, recomendado al 100%."</p>
                                 <div class="d-flex justify-content-center align-items-center gap-2">
                                     <span>&#128100;</span>
