@@ -1,13 +1,16 @@
 body {
   background: #ffffff;
   color: #eaeaea;
-  font-family: Arial, sans-serif;
+}
+
+.container{
+  padding: 100px 100px;
 }
 
 .page-title-wrapper {
   display: flex;
   justify-content: center;
-  margin: 60px 0 -40px;
+  margin: 20px 0 -40;
   position: relative;
   z-index: 2;
 }
@@ -20,6 +23,8 @@ body {
   letter-spacing: 2px;
   position: relative;
   color: #fff;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
 }
 
 .page-title::after {
@@ -38,7 +43,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0 80px;
+  padding: 50px 0 10px;
 }
 
 .section-line {
@@ -87,5 +92,5 @@ body {
 
 .map-container:hover {
   transform: scale(1.02);
-  transition: 0.3s;
+  transition: 1s;
 }
