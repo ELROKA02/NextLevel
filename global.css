@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 /* Beige sólido — CTA primario sobre fondos oscuros */
 .btn-back-beige {
   background-color: #d8c5a3;
@@ -44,4 +47,34 @@
 }
 .btn-full {
   width: 100%;
+}
+
+h1{
+  font-family: 'Pirata One';
+  font-size: 5rem;
+    letter-spacing: 4px;
+}
+
+h2{
+  font-family: 'Pirata One';
+  font-size: 3.5rem;
+    letter-spacing: 4px;
+}
+
+h3{
+  font-family: 'Pirata One';
+  font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+p{
+  font-family: 'Roboto Mono';
+  font-size: 1rem;
+}
+
+a.btn {
+  font-family: 'Roboto Mono';
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }

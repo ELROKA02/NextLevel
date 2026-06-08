@@ -57,9 +57,7 @@ body {
   background: #5a5a5a;
   color: #fff;
   padding: 10px 60px;
-  font-size: 2.5rem;
   font-weight: 600;
-  letter-spacing: 1px;
   position: relative;
 }
 
@@ -76,3 +74,4 @@ body {
 
 .frame:nth-child(odd) { --r: -2deg; }
 .frame:nth-child(even) { --r: 2deg; }
+
