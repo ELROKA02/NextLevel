@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="img/logo_V_blanco.png" type="image/x-icon">
     <script type="module" src="components/Header.js"></script>
@@ -58,6 +59,40 @@
         .visitanos {
             background-color: var(--color-gris);
         }
+
+        .estrellas {
+            display: inline-block;
+            color: white;
+            transition: color 0.2s;
+        }
+        .cardEfectoShadowDorado:hover .estrellas {
+            animation: aparecerEstrella 0.4s ease forwards;
+        }
+        .cardEfectoShadowDorado:hover .estrellas:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .cardEfectoShadowDorado:hover .estrellas:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+        .cardEfectoShadowDorado:hover .estrellas:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+        .cardEfectoShadowDorado:hover .estrellas:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+        .cardEfectoShadowDorado:hover .estrellas:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+        @keyframes aparecerEstrella {
+            from {
+                color: white;
+                transform: translateX(-10px) rotate(-180deg);
+            }
+            to {
+                color: rgb(255, 215, 0);
+                transform: translateX(0) rotate(0deg);
+            }
+        }
     </style>
 </head>
 <body>
@@ -75,8 +110,7 @@
                         <a href="https://booksy.com/es-es/148134_next-level-barbers_barberia_29219_pueblo-benalmadena#ba_s=seo"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="btn"
-                            style="background-color: #d8c5a3; color: #1f1f1f; border: 1px solid #d8c5a3;">Reservar Ahora</a>
+                            class="btn btn-back-beige btn-lg">Reservar Ahora</a>
                     </div>
                     <div class="col-12 col-lg-8 pt-4 pt-lg-0">
                         <video class="w-100 h-75 rounded" autoplay muted loop playsinline>
@@ -121,7 +155,7 @@
                     </div>
                 </div>
                 <div class="text-center mt-5">
-                    <a href="servicio.html" class="btn btn-outline-light">Ver todos los servicios</a>
+                    <a href="servicio.html" class="btn btn-border-white">Ver todos los servicios</a>
                 </div>
             </div>
         </section>
@@ -158,7 +192,7 @@
                     </button>
                 </div>
                 <div class="text-center mt-5">
-                    <a href="galeria.html" class="btn btn-outline-dark" style="background-color: rgba(0, 0, 0, 0.271);">Ver galería completa</a>
+                    <a href="galeria.html" class="btn btn-back-dark">Ver galería completa</a>
                 </div>
             </div>
         </section>
@@ -175,8 +209,7 @@
                         <a href="https://booksy.com/es-es/148134_next-level-barbers_barberia_29219_pueblo-benalmadena#ba_s=seo"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="btn"
-                            style="background-color: #d8c5a3; color: #1f1f1f; border: 1px solid #d8c5a3;">Reservar Ahora</a>
+                            class="btn btn-back-beige btn-lg">Reservar Ahora</a>
                     </div>
                 </div>
             </div>
@@ -187,9 +220,9 @@
                 <h2 class="text-center mb-5">Reseñas</h2>
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="card bg-dark h-100 text-white">
+                        <div class="card cardEfectoShadowDorado bg-dark h-100 text-white">
                             <div class="card-body text-center">
-                                <div class="mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                <div class="mb-3"><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span></div>
                                 <p class="card-text fw-bold">"Excelente servicio, muy profesional y el resultado es siempre perfecto."</p>
                                 <div class="d-flex justify-content-center align-items-center gap-2">
                                     <span>&#128100;</span>
@@ -199,9 +232,9 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card bg-dark h-100 text-white">
+                        <div class="card cardEfectoShadowDorado bg-dark h-100 text-white">
                             <div class="card-body text-center">
-                                <div class="mb-3">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                                <div class="mb-3"><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9734;</span></div>
                                 <p class="card-text fw-bold">"Me encanta el ambiente y el trato cercano. Volveré seguro."</p>
                                 <div class="d-flex justify-content-center align-items-center gap-2">
                                     <span>&#128100;</span>
@@ -211,9 +244,9 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card bg-dark h-100 text-white">
+                        <div class="card cardEfectoShadowDorado bg-dark h-100 text-white">
                             <div class="card-body text-center">
-                                <div class="mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                <div class="mb-3"><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span><span class="estrellas">&#9733;</span></div>
                                 <p class="card-text fw-bold">"El mejor barber de la zona, recomendado al 100%."</p>
                                 <div class="d-flex justify-content-center align-items-center gap-2">
                                     <span>&#128100;</span>

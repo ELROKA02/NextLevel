@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Beige sólido — CTA primario sobre fondos oscuros */
+.btn-back-beige {
+  background-color: #d8c5a3;
+  color: #1f1f1f;
+  border: 1px solid #d8c5a3;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+.btn-back-beige:hover {
+  background-color: #c9b28a;
+  color: #1f1f1f;
+  border-color: #c9b28a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(216, 197, 163, 0.7);
+}
+
+/* White outline — secundario sobre fondo negro */
+.btn-border-white {
+  background-color: transparent;
+  color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+.btn-border-white:hover {
+  background-color: #f8f9fa;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(248, 249, 250, 0.4);
+}
+
+/* Dark ghost — sutil sobre fondo pizarra */
+.btn-back-dark {
+  background-color: rgba(0, 0, 0, 0.271);
+  color: #060607;
+  border: 2px solid #000000;
+}
+.btn-back-dark:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-color: #fff;
+}
+
+/* === Size modifiers — composables con cualquier btn-* === */
+.btn-lg {
+  padding: 0.625rem 2.5rem;
+  font-size: 1.05rem;
+}
+.btn-xl {
+  padding: 0.75rem 3.5rem;
+  font-size: 1.125rem;
+}
+.btn-full {
+  width: 100%;
+}
+
+h1{
+  font-family: 'Pirata One';
+  font-size: 5rem;
+    letter-spacing: 4px;
+}
+
+h2{
+  font-family: 'Pirata One';
+  font-size: 3.5rem;
+    letter-spacing: 4px;
+}
+
+h3{
+  font-family: 'Pirata One';
+  font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+p{
+  font-family: 'Roboto Mono';
+  font-size: 1rem;
+}
+
+a.btn {
+  font-family: 'Roboto Mono';
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/*Efecto Card con borde dorado con sombra al hacer hover*/
+.cardEfectoShadowDorado{
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.cardEfectoShadowDorado:hover {
+    border-color: #d8c5a3;
+    box-shadow:
+    0 0 0 2px rgba(216, 197, 163, 0.25),
+    0 15px 35px rgba(216, 197, 163, 0.45);
+    transform: translateY(-5px);
+}
+
+/*borde animado con movimiento*/
+.cardBordeMovimiento{
+    position: relative;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.cardBordeMovimiento::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 6px;
+    border-radius: inherit;
+    background: conic-gradient(
+        from var(--angle),
+        transparent 70%,
+        #d8c5a3
+    );
+    animation: spin 3s linear infinite;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.cardBordeMovimiento:hover{
+    transform: translateY(-5px);
+}
+.cardBordeMovimiento:hover::after{
+    opacity: 1;
+}
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+/*Efecto Card con sobra y barra de proceso*/
+.cardEfectoShadowBarraNivel {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+.cardEfectoShadowBarraNivel:hover {
+    border-color: rgb(216, 197, 163);
+    box-shadow:
+        0 0 0 2px rgba(216, 197, 163, 0.25),
+        0 15px 35px rgba(216, 197, 163, 0.45);
+    transform: translateY(-5px);
+}
+.cardEfectoShadowBarraNivel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 20px;
+    background: linear-gradient(
+        90deg,
+        rgba(216, 197, 163, 0.4) 0%,
+        rgba(216, 197, 163, 0.8) 50%,
+        rgba(216, 197, 163, 1) 100%
+    );
+    transition: width 1.5s ease-out;
+}
+.cardEfectoShadowBarraNivel:hover::before {
+    width: 100%;
+    box-shadow:
+        0 0 8px rgba(216, 197, 163, 0.7),
+        0 0 15px rgba(216, 197, 163, 0.4);
+}
