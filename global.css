@@ -6,11 +6,19 @@
   background-color: #d8c5a3;
   color: #1f1f1f;
   border: 1px solid #d8c5a3;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 .btn-back-beige:hover {
   background-color: #c9b28a;
   color: #1f1f1f;
   border-color: #c9b28a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(216, 197, 163, 0.7);
 }
 
 /* White outline — secundario sobre fondo negro */
@@ -18,17 +26,25 @@
   background-color: transparent;
   color: #f8f9fa;
   border: 1px solid #f8f9fa;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 .btn-border-white:hover {
   background-color: #f8f9fa;
   color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(248, 249, 250, 0.4);
 }
 
 /* Dark ghost — sutil sobre fondo pizarra */
 .btn-back-dark {
   background-color: rgba(0, 0, 0, 0.271);
-  color: #212529;
-  border: 1px solid #212529;
+  color: #060607;
+  border: 2px solid #000000;
 }
 .btn-back-dark:hover {
   background-color: rgba(0, 0, 0, 0.5);
