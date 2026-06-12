@@ -94,6 +94,7 @@ a.btn {
   font-weight: bold;
   text-transform: uppercase;
 }
+
 /*Efecto Card con borde dorado con sombra al hacer hover*/
 .cardEfectoShadowDorado{
     border: 1px solid #ddd;
