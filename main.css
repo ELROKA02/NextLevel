@@ -1,3 +1,20 @@
+/*fondos*/
+.servicios {
+    background-color: var(--color-negro);
+}
+
+.booksy {
+    background-color: var(--color-blanco);
+}
+
+.resenas {
+    background-color: var(--color-negro);
+}
+
+.visitanos {
+    background-color: var(--color-gris);
+}
+
 /*mapa*/
 .map-container {
   height: 400px;
@@ -25,26 +42,49 @@ img {
     object-fit: cover;
 }
 
+/*Galeria NextLevel*/
+#carouselGaleria {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.4),
+        0 0 25px rgba(212,175,55,0.15);
+}
+
+.carousel-item {
+    position: relative;
+}
+
 .carousel-item img {
     width: 100%;
-    height: 600px;
+    height: 65vh;
+    min-height: 450px;
+    max-height: 650px;
+    object-fit: cover;
+    transition: transform 6s ease;
 }
 
-/*fondos*/
-.servicios {
-    background-color: var(--color-negro);
+.carousel-item.active img {
+    transform: scale(1.05);
 }
 
-.booksy {
-    background-color: var(--color-blanco);
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
+    background-color: rgba(255,255,255,0.5);
 }
 
-.resenas {
-    background-color: var(--color-negro);
+.carousel-indicators .active {
+    background-color: #d4af37;
 }
 
-.visitanos {
-    background-color: var(--color-gris);
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    padding: 20px;
 }
 
 /*Efectos para las reseñas*/
@@ -117,6 +157,15 @@ img {
     overflow: visible;
 }
 
+.servicios .card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+
+.servicios .card-body {
+    padding: 1rem;
+}
+
 /*Booksy*/
 .logoBooksy {
     animation: flotar 3s ease-in-out infinite;
@@ -131,6 +180,13 @@ img {
     }
 }
 
+/*reseñas*/
+.cardFooterReview {
+    border-top: 1px solid rgba(255,255,255, 0.15);
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
 /*next level barber*/
 .logoNextLevel{
     transition: all 0.35s ease;
@@ -139,6 +195,13 @@ img {
 .logoNextLevel:hover {
     transform: translateY(-6px) scale(1.02);
     box-shadow: 0 0 20px  rgba(216, 197, 163, 1);
+}
+
+.mensajeNextLevel {
+    background-color: #222; 
+    box-shadow: 4px 4px 20px 2px rgba(0,0,0,1); 
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /*Datos contacto*/
@@ -153,3 +216,30 @@ img {
     width: 30px;
     text-align: center;
 }
+
+.datosContacto a,
+.datosContacto a:visited {
+  color: #ffffff;
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+}
+
+.datosContacto a:hover,
+.datosContacto a:focus {
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+}
+
+.datosContacto ul {
+  list-style: none;
+}
+
+.datosContacto li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #c59d5f;
+}
+
+
+
+
+
