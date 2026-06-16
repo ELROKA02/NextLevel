@@ -14,3 +14,10 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.producto-imagen {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center;
+}
