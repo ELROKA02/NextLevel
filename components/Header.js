@@ -125,7 +125,32 @@ header .col-md-2:nth-child(7) {
               </div>
           </div>
       </nav>
-    </header>`;
+    </header>
+    
+     <div class="offcanvas offcanvas-start bg-black text-white" tabindex="-1" id="mobileMenu"
+        aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">Menú</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled">
+                <li class="mb-3">
+                    <a href="servicio.html" class=" h2 text-white text-decoration-none fs-5">Servicios</a>
+                </li>
+                <li class="mb-3">
+                    <a href="galeria.html" class=" h2  text-white text-decoration-none fs-5">Galeria</a>
+                </li>
+                <li class="mb-3">
+                    <a href="about-us.html" class=" h2 text-white text-decoration-none fs-5">Sobre nosotros</a>
+                </li>
+                <li class="mb-3">
+                    <a href="academia.html" class=" h2 text-white text-decoration-none fs-5">Academia</a>
+                </li>
+            </ul>
+        </div>
+    </div>`;
   }
 }
 
