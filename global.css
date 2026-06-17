@@ -107,6 +107,7 @@ a.btn {
   font-weight: bold;
   text-transform: uppercase;
 }
+
 /*Efecto Card con borde dorado con sombra al hacer hover*/
 .cardEfectoShadowDorado{
     border: 1px solid #ddd;
@@ -144,6 +145,14 @@ a.btn {
         #d8c5a3
     );
     animation: spin 3s linear infinite;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;

@@ -1,0 +1,245 @@
+/*fondos*/
+.servicios {
+    background-color: var(--color-negro);
+}
+
+.booksy {
+    background-color: var(--color-blanco);
+}
+
+.resenas {
+    background-color: var(--color-negro);
+}
+
+.visitanos {
+    background-color: var(--color-gris);
+}
+
+/*mapa*/
+.map-container {
+  height: 400px;
+  border: 3px solid #222;
+  box-shadow: 8px 10px 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(100%) invert(90%) contrast(90%);
+}
+
+.map-container:hover {
+  transform: scale(1.02);
+  transition: 1s;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Galeria NextLevel*/
+#carouselGaleria {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.4),
+        0 0 25px rgba(212,175,55,0.15);
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 65vh;
+    min-height: 450px;
+    max-height: 650px;
+    object-fit: cover;
+    transition: transform 6s ease;
+}
+
+.carousel-item.active img {
+    transform: scale(1.05);
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.carousel-indicators .active {
+    background-color: #d4af37;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/*Efectos para las reseñas*/
+.estrellas {
+    display: inline-block;
+    color: white;
+    transition: color 0.2s;
+}
+
+.cardEfectoShadowDorado:hover .estrellas {
+    animation: aparecerEstrella 0.4s ease forwards;
+}
+
+.cardEfectoShadowDorado:hover .estrellas:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.cardEfectoShadowDorado:hover .estrellas:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.cardEfectoShadowDorado:hover .estrellas:nth-child(3) {
+    animation-delay: 0.30s;
+}
+
+.cardEfectoShadowDorado:hover .estrellas:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+.cardEfectoShadowDorado:hover .estrellas:nth-child(5) {
+    animation-delay: 0.60s;
+}
+
+@keyframes aparecerEstrella {
+    from {
+        color: white;
+        transform: translateX(-10px) rotate(-180deg);
+    }
+
+    to {
+        color: rgb(255, 215, 0);
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+/*Efecto de las cards de servicios destacados de la página principal*/
+.servicios .card {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.servicios .row:hover .card {
+    transform: scale(0.85);
+    filter: brightness(0.6);
+    opacity: 0.7;
+}
+
+.servicios .row .card:hover {
+    transform: scale(1.1);
+    filter: brightness(1);
+    z-index: 100;
+}
+
+.servicios .col-md-4 {
+    overflow: visible;
+}
+
+.servicios .row {
+    overflow: visible;
+}
+
+.servicios .card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+
+.servicios .card-body {
+    padding: 1rem;
+}
+
+/*Booksy*/
+.logoBooksy {
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/*reseñas*/
+.cardFooterReview {
+    border-top: 1px solid rgba(255,255,255, 0.15);
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+/*next level barber*/
+.logoNextLevel{
+    transition: all 0.35s ease;
+}
+
+.logoNextLevel:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 0 20px  rgba(216, 197, 163, 1);
+}
+
+.mensajeNextLevel {
+    background-color: #222; 
+    box-shadow: 4px 4px 20px 2px rgba(0,0,0,1); 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*Datos contacto*/
+.datosContacto p{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.icono{
+    width: 30px;
+    text-align: center;
+}
+
+.datosContacto a,
+.datosContacto a:visited {
+  color: #ffffff;
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+}
+
+.datosContacto a:hover,
+.datosContacto a:focus {
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+}
+
+.datosContacto ul {
+  list-style: none;
+}
+
+.datosContacto li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #c59d5f;
+}
+
+
+
+
+
